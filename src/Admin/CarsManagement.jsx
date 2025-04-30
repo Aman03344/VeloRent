@@ -339,15 +339,27 @@ const CarsManagement = () => {
                 />
               </div>
 
-              <div className="md:col-span-2">
-                <label className="text-sm font-bold mb-1 block">Upload Image</label>
-                <input
-                  type="file"
-                  accept="image/*"
-                  onChange={handleFileChange}
-                  className="w-full px-6 py-2 rounded-lg border border-gray-300 file:bg-orange-100 file:text-orange-600 file:font-semibold file:rounded file:border-none"
-                />
+              <div className="md:col-span-2 w-full">
+                <label className="text-sm font-semibold mb-2 block text-gray-700">
+                  Upload Image
+                </label>
+                <div className="relative">
+                  <input
+                    type="file"
+                    accept="image/*"
+                    onChange={handleFileChange}
+                    className="block w-full text-sm text-gray-500
+        file:mr-4 file:py-2 file:px-4
+        file:rounded-lg file:border-0
+        file:text-sm file:font-semibold
+        file:bg-orange-500 file:text-white
+        hover:file:bg-orange-600
+        transition-all duration-300 ease-in-out
+        cursor-pointer"
+                  />
+                </div>
               </div>
+
 
               <div className="md:col-span-2 flex gap-4 justify-end mt-4">
                 <button
