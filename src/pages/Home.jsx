@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <>
       {/* Canvas for animated balls */}
-      <section className="flex flex-col md:flex-row items-center justify-between px-5 pt-15 bg-gradient-to-r from-[#ffffff8f] to-orange-50 mt-6 min-h-[70vh] relative">
+      <section className="flex flex-col md:flex-row  h-[90vh] items-center justify-between px-5 pt-15 bg-gradient-to-r from-[#ffffff8f] to-orange-50 mt-6 min-h-[80vh] relative">
         <CanvasBackground />
         <div className="max-w-xl mb-10 md:mb-0">
           <h1 className="text-5xl font-bold cursor-pointer">
