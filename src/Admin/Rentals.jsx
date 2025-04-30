@@ -11,6 +11,11 @@ const Rentals = () => {
   const { rentals, isLoading, isSuccess, isError, message } = useSelector((state) => state.rentals)
 
   useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
+
+  useEffect(() => {
     dispatch(getRentalsFormAdmin())
     if (isError && message) {
       toast.error(message)

@@ -117,7 +117,7 @@ const Navbar = () => {
   }
 
   return (
-    <header className="w-full flex justify-between items-center px-6 py-4 shadow-sm fixed bg-[#fffffffa] md:z-10 z-10 top-0">
+    <header className="w-full flex justify-between items-center px-6 py-1.5 shadow-sm fixed bg-[#fffffffa] md:z-10 z-10 top-0">
       <Link to={"/"} className="text-3xl font-bold">
         VeloRent
       </Link>

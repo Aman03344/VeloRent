@@ -33,10 +33,10 @@ const stats = [
 
 const Dashboard = () => {
   return (
-    <div className="p-6 bg-gray-50 min-h-auto md:mt-10">
+    <div className="p-2.5 bg-gray-50 min-h-auto md:mt-10">
       <div className="flex items-center justify-between mb-6">
         <h1 className="text-3xl font-bold text-gray-900">Dashboard</h1>
-        <span className="text-gray-500 text-sm">Last updated: 4/17/2025</span>
+        <span className="text-gray-500 text-[10px]">Last updated: 4/17/2025</span>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
