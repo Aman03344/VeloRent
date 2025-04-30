@@ -31,7 +31,7 @@ const CarCategory = () => {
   }
 
   return (
-    <section className="py-12 px-4 h-[100%] bg-[#ffffffe8]">
+    <section className="py-17 px-4 h-[100%] bg-[#ffffffe8] md:pt-40">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold text-gray-900 text-center mb-8">Browse by Category</h2>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
