@@ -13,14 +13,16 @@ const Rentals = () => {
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
-
-
   useEffect(() => {
     dispatch(getRentalsFormAdmin())
-    if (isError && message) {
+  },[dispatch])
+  
+  useEffect(()=>{
+    if(isError && message){
       toast.error(message)
     }
-  }, [isError, message])
+  },[isError , message])
+  
 
   return (
     <div className="p-4 md:p-6 relative md:mt-10">
@@ -90,8 +92,8 @@ const Rentals = () => {
             ) : (
               <>
                 {rentals?.users?.map((user) =>
-                  user?.rentals?.map((rental) => (
-                    <tr key={rental._id} className="hover:bg-gray-50">
+                  user?.rentals?.map((rental, index) => (
+                    <tr key={rental?._id || index} className="hover:bg-gray-50">
                       <td className="px-4 py-3 md:py-4 font-semibold text-gray-900">{rental?._id}</td>
                       <td className="px-4 py-3 md:py-4">
                         <div className="font-medium">{user?.name}</div>

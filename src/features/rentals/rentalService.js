@@ -7,7 +7,7 @@ const fetchRentalsFormAdmin = async (token) => {
       authorization: `Bearer ${token}`,
     },
   };
-  const response = await axios.get(`https://car-rental-app-5d25.onrender.coms/api/admin/rentals`, options);
+  const response = await axios.get(`https://car-rental-app-5d25.onrender.com/api/admin/rentals`, options);
   return response.data;
 };
 
