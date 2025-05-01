@@ -24,7 +24,7 @@ const MyRentals = () => {
     }, [isError, message]);
 
     return (
-        <div className="w-full px-4 py-10 min-h-screen  md:pt-25">
+        <div className="w-full px-4 py-10 min-h-screen  md:pt-25 pt-20">
             <h1 className="text-3xl font-bold mb-8 text-start px-2 md:px-6">My Rentals</h1>
 
             {isLoading ? (
